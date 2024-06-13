@@ -3,8 +3,6 @@
 #include <chrono>
 #include "drone.h"
 
-#define FREQ 1 
-
 int main(){
   drone Drone;
   vec3 add(0, 0, 1);
