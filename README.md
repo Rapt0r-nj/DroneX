@@ -4,10 +4,10 @@ Drone x Flight Controller Simulator
 ### objective
 ***Learn ROS, Project Architecture and good Coding Habits***
 
-### tasks
-  ***simulate a drone, then move it from some random initial position and rotation to hovering state via PID control.***  
+### task
+  ***simulate a drone, then move it from some random initial position and orientation to hovering state at target location via PID control.***  
 - **Phase 0**
-  - Set up the drone in C++: position, orientation, rotor speeds. 
+  - done ~~Set up the drone in C++: position, orientation, rotor speeds.~~
   - Simulate the drones movement based on attributes.
 - **Phase 1**
   - Set up basic PID control.
