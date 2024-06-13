@@ -1,14 +1,19 @@
 #include <bits/stdc++.h>
 #include <thread>
 #include <chrono>
-#include "drone.h"
+
+#include "controller.h"
 
 int main(){
   drone Drone;
-  vec3 add(0, 0, 1);
+  Drone.r1 = 0.5;
+  Drone.r2 = 0.5;
+  Drone.r3 = 0.5;
+  Drone.r4 = 0.5;
+
   while(1){
-    Drone.pos = Drone.pos + add;
     Drone.pos.print();
+    update(Drone);
     std::this_thread::sleep_for(std::chrono::seconds(1/FREQ));
   }
 }
