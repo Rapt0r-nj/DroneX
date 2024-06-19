@@ -20,9 +20,9 @@ struct drone{
   const int DLEN = 1;
   const int PLEN = 1;
 
-  const double KP = 0.003;
+  const double KP = 0.005;
   const double KI = 0.0;
-  const double KD = 0.0;
+  const double KD = 0.5;
 
   double I = 0;
   double E = 0;

@@ -6,6 +6,7 @@
 
 int main(){
   drone Drone;
+  Drone.pos.z = 45.0; 
   vec3 target(0, 0, 128);
 
   while(1){

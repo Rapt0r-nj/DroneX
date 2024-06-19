@@ -6,11 +6,19 @@ command flightControl(drone& d, vec3 tar){
 
   //throttle
   double error = tar.z - d.pos.z;
-  double throttle = d.KP * error;
+
+  double prop = d.KP * error;
+  double intg = d.KI * d.I;
+  double diff = d.KD * (error - d.E);
+  double throttle = prop + intg + diff;
+  
+  d.I += error;
+  d.E = error;
   throttle = std::max(0.0, throttle);
   throttle = std::min(1.0, throttle);
   c.throttle = throttle;
 
+  std::cout<<prop<<" "<<intg<<" "<<diff<<" "<<std::endl;
   return c;
 }
 
