@@ -8,9 +8,9 @@ Drone x Flight Controller Simulator
   ***simulate a drone, then move it from some random initial position and orientation to hovering state at target location via PID control.***  
 - **Phase 0**
   - done ~~Set up the drone in C++: position, orientation, rotor speeds.~~
-  - Simulate the drones movement based on attributes.
+  - ~~Simulate the drones movement based on attributes.~~
 - **Phase 1**
-  - Set up basic PID control.
+  - ~~Set up basic PID control.~~
   - Distribute the PID control over 4 rotors.
 - **Phase 2**
   - Sync everything to make the flight controller.
